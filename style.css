@@ -1,0 +1,33 @@
+.nav-link {
+    text-align: right;
+}
+
+.about-me {
+    background: black;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+} 
+
+a:link {
+   color: red;
+}
+
+a:visited {
+    color: red;
+}
+
+.project-section {
+    height: fit-content;
+    background: black;
+}
+
+.carousel {
+    background: black;
+}
+
+.navbar {
+    background: black;
+}
