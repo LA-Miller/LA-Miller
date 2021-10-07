@@ -1,85 +1,72 @@
+/* NAVBAR */
+.navbar {
+    background-color: #0071F2;
+ }
+
 .nav-link {
     text-align: right;
+    color: #F5FAFF;
 }
 
-.nav-item a:link{
-    color: white;
+.navbar-brand {
+    --angle: 0deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5FAFF;
+    font-size: 30px;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(var(--angle), #00FFFF , #0071F2, #001833);
+    animation: 8s rotate linear infinite;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #001833;
+}  
+
+@keyframes rotate {
+    to {
+        --angle: 360deg;
+    }
 }
 
-.nav-item a:visited {
-    color: black;
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }
 
-/* .about-me {
-    background: black;
-} */
+.navbar-toggler {
+    background-color: #001833;
+    border: 3px solid black;
+    border-radius: 10px;
+}
 
+/* CAROUSEL */
+.carousel {
+    background-image: linear-gradient(#0071f2, #F5FAFF);
+}
+
+/* LANDING */
 #landing {
     display: flex;
     justify-content: space-between;
     
 } 
-/* 
-a:link {
-   color: black;
-}
 
-a:visited {
-    color: blue;
-} */
 
+/* PROJECT */
 .project-section {
     height: fit-content;
     /* background: black; */
 }
 
-.carousel {
-    /* background: black; */
-}
-
-/* .carousel-item {
-    height: 100%;
-    width: 100%;
-    object-fit: scale-down;
-} */
-
-.navbar {
-   background-color: red;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    
-    
-}
-
-.footer {
-    background-color: red;
-}
-
-.navbar-brand {
-    color: white;
-    font-size: 30px;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.navbar-toggler {
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-.btn {
-    background-color: red;
-}   
-
 .project-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 2px solid red;
+    border: 2px solid #0071F2;
     border-radius: 10px;
     z-index: 2;
 }
@@ -90,3 +77,30 @@ body {
     object-fit: cover;
     z-index: 3;
 }
+
+/* FORMSPREE */
+.contact-me {
+    color: #001833;
+}
+
+label {
+    color: #001833;
+}
+
+input {
+    color: #001833;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0071F2;
+}
+
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5FAFF;   
+}
+
+
+

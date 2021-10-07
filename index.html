@@ -27,9 +27,9 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar navbar-dark" id="navbar">
       <div class="navbar">
-        <div class="navbar-brand mx-2"><p><b>Luke Miller</b></p></div>
+        <div class="navbar-brand mx-2" id="box"><p><b>Luke Miller</b></p></div>
       </div>
         <button class="navbar-toggler navbar-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
@@ -85,9 +85,9 @@
           <div class="col-6"> <img class="headshot image-fluid w-100 py-3" style="height: auto" src="./assets/LukeMiller_1.jpg" alt="Image"></div>
           <div class="col-6">  
             <div class="lander-intro">
-            <p><h3 class="hello" style="color: black; font-size: 2rem;">Hello,</h3> my name is <h1 class="name" style="color: red; font-size: 2rem;">Luke Miller.</h1> I'm a student studying Front-end Web Development. </p>
+            <p><h3 class="hello" style="color: #001833;">Hello,</h3> my name is <h1 class="name" style="color: #0071F2; font-size: 2rem;">Luke Miller.</h1> I'm a student studying Front-end Web Development. </p>
             <p>My passion for programming began at the beginning of the pandemic. I have always been captivated by video games and I originally began coding thinking that I wanted to become a game developer. I dove into python, c#, and c++ and got some knowledge of how basic syntax works by making some simple video games. Later on, I found out about Eleven Fifty Academy and that's when my passion for web development started. Web development gives me the satisfaction of solving difficult problems, while also giving me an artistic outlet. I have a decent grasp on html, css, and javascript, and can solve most problems with the help of some outside resources.</p>
-            <p>Besides coding, my other hobbies include backpacking, video games, and exercising. I plan on completing a thru hike of one of the major nature trails with my brother. </p>
+            <p>Besides coding, my other hobbies include backpacking, video games, and exercising. I plan on completing a thru hike of either the Appalachian Trail, or the Te Araroa trail in New Zealand. </p>
           </div>
         </div>
         </div>
@@ -110,13 +110,17 @@
     <!-- FORMSPREE -->
     <form id="fs-frm" class="p-5"name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdoyjpyz" method="post">
       <div class="container">
+        <div class="contact-me d-flex justify-content-center pt-3 pb-1">
+          <h1>Contact Me</h1>
+        </div>
+       
         <div class="row">
-          <div class="col py-2">
+          <div class="col pb-3">
       <fieldset id="fs-frm-inputs">
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
       </div>
-      <div class="col py-2">
+      <div class="col pb-3">
         <label for="email-address">Email Address</label>
         <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
       </div>
@@ -124,7 +128,7 @@
         <textarea rows="5" name="message" id="message"required=""></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       </fieldset>
-      <input type="submit" value="Submit" class="btn btn-danger">
+      <input type="submit" value="Submit" class="btn btn-success">
     </div>
     </div>
     </form>
