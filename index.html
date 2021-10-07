@@ -15,12 +15,23 @@
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar"></div>
-        <button class="navbar-toggler bg-danger navbar-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <nav class="navbar" id="navbar">
+      <div class="navbar">
+        <div class="navbar-brand mx-2"><p><b>Luke Miller</b></p></div>
+      </div>
+        <button class="navbar-toggler navbar-light mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -33,28 +44,28 @@
               <a href="#project" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#fs-frm" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
       
     </nav>
     <!-- HEADER -->
-    <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./assets/IMG_0043.JPG" class="d-block h-50 w-50 m-auto py-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/IMG_0888.JPG" class="d-block h-75 w-75 m-auto py-3" alt="...">
+        </div>
         <div class="carousel-item active">
-          <img src="./assets/IMG_0043.JPG" class="d-block h-25 w-25 m-auto py-3" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/IMG_0888.JPG" class="d-block h-50 w-50 m-auto py-3" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/IMG_0893.JPG" class="d-block h-50 w-50 m-auto py-3" alt="...">
+          <img src="./assets/IMG_0893.JPG" class="d-block h-75 w-75 m-auto py-3" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
@@ -71,12 +82,12 @@
     <div id="landing" >
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6"> <img class="headshot image-fluid w-100" style="height: auto" src="./assets/LukeMiller_1.jpg" alt="Image"></div>
+          <div class="col-6"> <img class="headshot image-fluid w-100 py-3" style="height: auto" src="./assets/LukeMiller_1.jpg" alt="Image"></div>
           <div class="col-6">  
             <div class="lander-intro">
-            <p><h3 class="hello" style="color: black; font-size: 2rem;">Hello,</h3> my name is <h1 class="name" style="color: red; font-size: 2rem;">Luke Miller.</h1> I'm a Front-end Web Developer. </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius magni blanditiis placeat perferendis, debitis autem laudantium magnam quibusdam assumenda provident quam obcaecati cumque dolorum laborum aut, itaque dolor nisi!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos maxime ipsa ut facilis id itaque quaerat eius quod voluptatum maiores fuga, fugiat commodi earum delectus totam eum accusamus minima iusto?</p>
+            <p><h3 class="hello" style="color: black; font-size: 2rem;">Hello,</h3> my name is <h1 class="name" style="color: red; font-size: 2rem;">Luke Miller.</h1> I'm a student studying Front-end Web Development. </p>
+            <p>My passion for programming began at the beginning of the pandemic. I have always been captivated by video games and I originally began coding thinking that I wanted to become a game developer. I dove into python, c#, and c++ and got some knowledge of how basic syntax works by making some simple video games. Later on, I found out about Eleven Fifty Academy and that's when my passion for web development started. Web development gives me the satisfaction of solving difficult problems, while also giving me an artistic outlet. I have a decent grasp on html, css, and javascript, and can solve most problems with the help of some outside resources.</p>
+            <p>Besides coding, my other hobbies include backpacking, video games, and exercising. I plan on completing a thru hike of one of the major nature trails with my brother. </p>
           </div>
         </div>
         </div>
@@ -87,14 +98,53 @@
     <div id="project" class="project-section text-light">
       <div class="container-fluid">
         <div class="row">
-          <div class="col"><a href="https://codepen.io/la-miller/pen/dyWBQbL"><img class="d-block m-auto w-100 p-2" src="./assets/creatureProject (2).png" alt="Creature Assignment"></a></div>
-          <div class="col"><a href="https://la-miller.github.io/actualStaticLayout/"><img class="d-block m-auto w-100 p-2" src="./assets/staticLayout.png" alt="Static Layout"></a></div>
+          <div class="col py-5"><a href="https://codepen.io/la-miller/pen/dyWBQbL"><img class="d-block m-auto w-100 p-2" src="./assets/creatureProject (2).png" alt="Creature Assignment"></a></div>
+          <div class="col py-5"><a href="https://la-miller.github.io/actualStaticLayout/"><img class="d-block m-auto w-100 p-2" src="./assets/staticLayout.png" alt="Static Layout"></a></div>
           <div class="w-100"></div>
           <div class="col"><a href="https://la-miller.github.io/pokemon_API/"><img class="d-block m-auto w-100 p-2" src="./assets/pokemonAPI.png" alt="Pokemon API"></a></div>
           <div class="col"><a href="https://apichallenge2-51523.web.app/"><img class="d-block m-auto w-100 p-2"src="./assets/coinlayer.png" alt="Coin Layer API"></a></div>
         </div>
       </div>
     </div>
+
+    <!-- FORMSPREE -->
+    <form id="fs-frm" class="p-5"name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdoyjpyz" method="post">
+      <div class="container">
+        <div class="row">
+          <div class="col py-2">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+      </div>
+      <div class="col py-2">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      </div>
+        <label for="message">Message</label>
+        <textarea rows="5" name="message" id="message"required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input type="submit" value="Submit" class="btn btn-danger">
+    </div>
+    </div>
+    </form>
+
+    <!-- FOOTER -->
+    <ul class="footer nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#navbar">&copy; Luke Miller</a>
+      </li>
+      <li class="footer-item nav-item">
+        <a class="nav-link" href="MillerLuke_Resume_2021_3.docx" download>Resume</a>
+      </li>
+      <li class="footer-item nav-item">
+        <a class="nav-link" href="https://github.com/LA-Miller">Github</a>
+      </li>
+      <li class="footer-item nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/luke-miller-91a68a222/">LinkedIn</a>
+      </li>
+    </ul>
+
   </body>
   <!-- JavaScript Bundle with Popper -->
   <script

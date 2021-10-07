@@ -2,32 +2,91 @@
     text-align: right;
 }
 
-.about-me {
-    background: black;
+.nav-item a:link{
+    color: white;
 }
 
-.landing {
+.nav-item a:visited {
+    color: black;
+}
+
+/* .about-me {
+    background: black;
+} */
+
+#landing {
     display: flex;
     justify-content: space-between;
+    
 } 
-
+/* 
 a:link {
-   color: red;
+   color: black;
 }
 
 a:visited {
-    color: red;
-}
+    color: blue;
+} */
 
 .project-section {
     height: fit-content;
-    background: black;
+    /* background: black; */
 }
 
 .carousel {
-    background: black;
+    /* background: black; */
 }
 
+/* .carousel-item {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+} */
+
 .navbar {
-    background: black;
+   background-color: red;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.footer {
+    background-color: red;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.navbar-toggler {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: red;
+}   
+
+.project-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid red;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.project-section img:hover {
+    width: 125%;
+    height: 125%;
+    object-fit: cover;
+    z-index: 3;
 }
