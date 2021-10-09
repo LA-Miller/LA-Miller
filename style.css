@@ -72,8 +72,8 @@
 }
 
 .project-section img:hover {
-    width: 125%;
-    height: 125%;
+    width: 110%;
+    height: 110%;
     object-fit: cover;
     z-index: 3;
 }
