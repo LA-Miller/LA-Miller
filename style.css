@@ -91,6 +91,10 @@ input {
     color: #001833;
 }
 
+#fs-frm {
+    background-image: linear-gradient(#F5FAFF, #0071f2);
+}
+
 /* FOOTER */
 .footer {
     background-color: #0071F2;
