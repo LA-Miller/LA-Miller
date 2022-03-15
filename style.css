@@ -4,7 +4,6 @@
  }
 
 .nav-items {
-    text-align: center;
     color: #F5FAFF;
 }
 
@@ -17,12 +16,12 @@
     font-size: 30px;
     border: 10px solid;
     border-image-slice: 1;
-    border-image-source: linear-gradient(var(--angle), #00FFFF , #0071F2, #001833);
+    border-image-source: linear-gradient(var(--angle), #f3f0f0 , #bb5d5d, #611515);
     animation: 8s rotate linear infinite;
     padding-top: 15px;
     padding-left: 5px;
     padding-right: 5px;
-    background-color: #001833;
+    background-color: hsla(0, 7%, 8%, 0.781);
 }
 
 .header-container {
@@ -32,6 +31,11 @@
 }
 
 .greeting {
+    background-color: #4b4a4d88;
+    margin: 10%;
+    padding: 1%;
+    border-radius: 100px;
+    box-shadow: 2px 4px hsla(240, 8%, 15%, 0.781);
     position: absolute;
     top: 8px;
     left: 16px;
@@ -52,9 +56,14 @@
 }
 
 .navbar-toggler {
-    background-color: #001833;
+    background-color: #611515;
     border: 3px solid black;
     border-radius: 10px;
+}
+
+.header-img {
+    width: 100%;
+   
 }
 
 /* CAROUSEL */
@@ -65,22 +74,21 @@
 /* LANDING */
 #landing {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 } 
 
 
 /* PROJECT */
 .project-section {
     height: fit-content;
-    /* background: black; */
+    background-image: linear-gradient(#F5FAFF, rgb(33,37,41));
 }
 
 .project-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 2px solid #0071F2;
+    border: 2px solid #BB2D3B;
     border-radius: 10px;
     z-index: 2;
 }
@@ -94,29 +102,34 @@
 
 /* FORMSPREE */
 .contact-me {
-    color: #001833;
+    color: #BB2D3B;
 }
 
 label {
-    color: #001833;
+    color: #BB2D3B;
 }
 
 input {
-    color: #001833;
+    color: #BB2D3B;
 }
 
 #fs-frm {
-    background-image: linear-gradient(#F5FAFF, darkblue);
+    /* background-image: linear-gradient(#F5FAFF, rgb(33,37,41)); */
+    background-color: rgb(33,37,41);
 }
 
 /* FOOTER */
 .footer {
-    background-color: darkblue;
+    background-color: rgb(33,37,41);
+}
+
+.nav-link {
+    color: #BB2D3B;
 }
 
 /* BODY */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Trispace', sans-serif;
     background-color: #F5FAFF;   
 }
 
