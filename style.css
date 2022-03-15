@@ -131,6 +131,15 @@ input {
     box-shadow: 3px 3px rgb(22, 17, 17);
 }
 
+.headshot {
+    width: 50%;
+    height: auto;
+}
+
+.lander-intro {
+    margin-top: 1%;
+}
+
 /* BODY */
 body {
     font-family: 'Trispace', sans-serif;
