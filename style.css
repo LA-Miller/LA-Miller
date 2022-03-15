@@ -32,13 +32,13 @@
 
 .greeting {
     background-color: #4b4a4d88;
-    margin: 10%;
+    margin: 1%;
     padding: 1%;
-    border-radius: 100px;
+    border-radius: 20%;
     box-shadow: 2px 4px hsla(240, 8%, 15%, 0.781);
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 1%;
+    left: 5%;
     width: 50%;
     height: auto;
 }
@@ -125,6 +125,10 @@ input {
 
 .nav-link {
     color: #BB2D3B;
+}
+
+.btn {
+    box-shadow: 3px 3px rgb(22, 17, 17);
 }
 
 /* BODY */
