@@ -1,10 +1,10 @@
 /* NAVBAR */
 .navbar {
-    background-color: #0071F2;
+    background-color: transparent;
  }
 
-.nav-link {
-    text-align: right;
+.nav-items {
+    text-align: center;
     color: #F5FAFF;
 }
 
@@ -23,7 +23,21 @@
     padding-left: 5px;
     padding-right: 5px;
     background-color: #001833;
-}  
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.greeting {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    width: 50%;
+    height: auto;
+}
 
 @keyframes rotate {
     to {
@@ -92,12 +106,12 @@ input {
 }
 
 #fs-frm {
-    background-image: linear-gradient(#F5FAFF, #0071f2);
+    background-image: linear-gradient(#F5FAFF, darkblue);
 }
 
 /* FOOTER */
 .footer {
-    background-color: #0071F2;
+    background-color: darkblue;
 }
 
 /* BODY */
